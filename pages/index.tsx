@@ -6,7 +6,7 @@ import {alpha, Box, Container} from '@mui/material'
 import { str } from '@dimjs/utils'
 
 const Home: NextPage = () => {
-  const str1=str.capitalizeAll('1111')
+  const str1=str.capitalizeAll('111wwww1')
   return (
     <div className={styles.container}>
       <Head>

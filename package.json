@@ -14,7 +14,7 @@
   },
   "homepage": "https://github.com/tianyingchun/next-issue#readme",
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS=\"--inspect --max_old_space_size=8192\" next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
