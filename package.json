@@ -1,0 +1,40 @@
+{
+  "name": "next-issue",
+  "version": "1.0.0",
+  "description": "next bug report repo",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tianyingchun/next-issue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tianyingchun/next-issue/issues"
+  },
+  "homepage": "https://github.com/tianyingchun/next-issue#readme",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "next": "12.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "@mui/material":"5.10.4",
+    "@dimjs/utils":"1.2.23",
+    "@mui/icons-material":"5.10.3",
+    "@emotion/react": "11.10.4",
+    "@emotion/styled": "11.10.4"
+  },
+  "devDependencies": {
+    "@types/node": "18.7.16",
+    "@types/react": "18.0.18",
+    "@types/react-dom": "18.0.6",
+    "eslint": "8.23.0",
+    "eslint-config-next": "12.2.5",
+    "typescript": "4.8.2"
+  }
+}
