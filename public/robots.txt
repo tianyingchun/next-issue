@@ -1,0 +1,6 @@
+#
+#  Hyperse
+#  Version  1.0
+#
+
+User-agent:  *

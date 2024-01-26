@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import 'keen-slider/keen-slider.min.css';
+@import 'overlayscrollbars/overlayscrollbars.css';
+
+* {
+  scroll-behavior: smooth;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}
+
+@layer components {
+  .hyperce-head-xl {
+    @apply font-extrabold text-4xl md:text-6xl;
+  }
+  .hyperce-sub-head {
+    @apply font-medium text-base md:text-lg;
+  }
+  .hyperce-head-sup {
+    @apply text-sm font-semibold;
+  }
+
+  .hyperce-card-header {
+    @apply text-lg md:text-xl font-bold;
+  }
+
+  .hyperce-card-description {
+    @apply text-xs md:text-sm font-medium;
+  }
+
+  .hyperce-btn-text-low {
+    @apply text-base font-bold;
+  }
+  .hyperce-btn-text-high {
+    @apply text-lg font-bold;
+  }
+}
