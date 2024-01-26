@@ -95,7 +95,7 @@
     "@playwright/test": "^1.41.1",
     "@types/aos": "3.0.7",
     "@types/node": "^20.11.7",
-    "@types/prettier": "2.7.3",
+    "@types/prettier": "3.0.0",
     "@types/react": "^18.2.48",
     "@types/shell-quote": "1.7.5",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
