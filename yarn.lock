@@ -7325,17 +7325,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-intl@npm:^3.5.2":
-  version: 3.5.2
-  resolution: "next-intl@npm:3.5.2"
+"next-intl@npm:^3.5.3":
+  version: 3.5.3
+  resolution: "next-intl@npm:3.5.3"
   dependencies:
     "@formatjs/intl-localematcher": "npm:^0.2.32"
     negotiator: "npm:^0.6.3"
-    use-intl: "npm:^3.5.2"
+    use-intl: "npm:^3.5.3"
   peerDependencies:
     next: ^10.0.0 || ^11.0.0 || ^12.0.0 || ^13.0.0 || ^14.0.0
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 12149f7873b1a2bdbe1b0a5d05fd781c4c63591c53090bf4d71cac819d97e91fb63cff65ba03df0c6b703e4e612a81bd23e6ff8b1d9f3230deb443d706e7056c
+  checksum: a2ed50575d5e4e68554ca19a039f6b8ec65e0817ac121086218331c5e0929a381594d2b536425a8fd102fba42a0127bd6741684ee278320b575d8134af6040d7
   languageName: node
   linkType: hard
 
@@ -7391,7 +7391,7 @@ __metadata:
     lint-staged: "npm:15.2.0"
     material-ui-popup-state: "npm:5.0.10"
     next: "npm:14.1.0"
-    next-intl: "npm:^3.5.2"
+    next-intl: "npm:^3.5.3"
     next-themes: "npm:^0.2.1"
     npm-run-all: "npm:^4.1.5"
     overlayscrollbars: "npm:2.4.7"
@@ -10082,15 +10082,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-intl@npm:^3.5.2":
-  version: 3.5.2
-  resolution: "use-intl@npm:3.5.2"
+"use-intl@npm:^3.5.3":
+  version: 3.5.3
+  resolution: "use-intl@npm:3.5.3"
   dependencies:
     "@formatjs/ecma402-abstract": "npm:^1.11.4"
     intl-messageformat: "npm:^9.3.18"
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: d76d2620e99cd9ca17570de345844b489c20707a4c147c8fc4c8b95552c0eca6963367c80e991eded304087e8afbb198b47bd12d79389f585ebe5cb5bbe0e0a9
+  checksum: f3f3c5676137a9fdeaab92ca84c331cf38489d12d70c15d920ea2c7552a745210a3146fa8539934081f0c4e4c99b8b702d71f811803b69b6eb004040f325b592
   languageName: node
   linkType: hard
 
