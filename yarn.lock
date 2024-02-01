@@ -7394,7 +7394,7 @@ __metadata:
     next-intl: "npm:^3.5.3"
     next-themes: "npm:^0.2.1"
     npm-run-all: "npm:^4.1.5"
-    overlayscrollbars: "npm:2.4.7"
+    overlayscrollbars: "npm:2.5.0"
     overlayscrollbars-react: "npm:0.5.4"
     postcss: "npm:^8.4.33"
     preline: "npm:^2.0.3"
@@ -7792,10 +7792,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"overlayscrollbars@npm:2.4.7":
-  version: 2.4.7
-  resolution: "overlayscrollbars@npm:2.4.7"
-  checksum: d281e1f5e591176025f927aa833b1a3eff16e79d949cf68358bc7fe9a64a5aa1d622e8d05a8c1195f9b86d1fc87fe5d2114d2a86e00872580cb334f7137f69d9
+"overlayscrollbars@npm:2.5.0":
+  version: 2.5.0
+  resolution: "overlayscrollbars@npm:2.5.0"
+  checksum: caa8a59cd6b5c2cd6985a5fb57f17fc4255617ccbdc19ff793e7937f70deb55955d7d04ca4c942fe3a3306925ebf2ea506ed8031f2aa7f97180d5900c0dd4aff
   languageName: node
   linkType: hard
 
