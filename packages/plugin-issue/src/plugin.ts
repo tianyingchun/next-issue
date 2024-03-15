@@ -1,25 +1,14 @@
 import { PluginCommonModule, VendurePlugin } from '@vendure/core';
-import { CampaignAdminResolver } from './api/resolvers/campaign.resolver.js';
-import { adminApiExtensions, shopApiExtensions } from './api/schema/index.js';
 import { PLUGIN_INIT_OPTIONS } from './constants.js';
-import { CampaignTranslation } from './entities/campaign-translation.entity.js';
-import { Campaign } from './entities/campaign.entity.js';
-import { collectionCustomFields } from './entities/custom-fields-collection.entity.js';
-import { CampaignService } from './services/campaign.service.js';
+import { Menu } from './entities/menu.entity.js';
+import { MenuService } from './services/menu.service.js';
 import type { PluginInitOptions } from './types.js';
 
-const services = [CampaignService];
+const services = [MenuService];
 
 @VendurePlugin({
   imports: [PluginCommonModule],
-  entities: [Campaign, CampaignTranslation],
-  adminApiExtensions: {
-    schema: adminApiExtensions,
-    resolvers: [CampaignAdminResolver],
-  },
-  shopApiExtensions: {
-    schema: shopApiExtensions,
-  },
+  entities: [Menu],
   compatibility: '>=2.0.0',
   providers: [
     ...services,
@@ -31,16 +20,12 @@ const services = [CampaignService];
       useFactory: () => PluginIssue.options,
     },
   ],
-  configuration: (config) => {
-    config.customFields.Collection.push(...collectionCustomFields);
-    return config;
-  },
 })
 export class PluginIssue {
   static options: PluginInitOptions = {
     autoDataInit: false,
   };
-  constructor(private campaignService: CampaignService) {}
+  constructor(private menuService: MenuService) {}
   /**
    * The static `init()` method is a convention used by Vendure plugins which allows options
    * to be configured by the user.
@@ -50,6 +35,6 @@ export class PluginIssue {
     return PluginIssue;
   }
   async onApplicationBootstrap() {
-    await this.campaignService.initCampaigns();
+    await this.menuService.init();
   }
 }

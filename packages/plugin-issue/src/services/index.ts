@@ -1,1 +1,1 @@
-export * from './campaign.service.js';
+export * from './menu.service.js';
