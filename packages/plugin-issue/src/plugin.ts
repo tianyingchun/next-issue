@@ -1,5 +1,6 @@
 import { PluginCommonModule, VendurePlugin } from '@vendure/core';
 import { PLUGIN_INIT_OPTIONS } from './constants.js';
+import { MenuTranslation } from './entities/menu-translation.entity.js';
 import { Menu } from './entities/menu.entity.js';
 import { MenuService } from './services/menu.service.js';
 import type { PluginInitOptions } from './types.js';
@@ -8,7 +9,7 @@ const services = [MenuService];
 
 @VendurePlugin({
   imports: [PluginCommonModule],
-  entities: [Menu],
+  entities: [Menu, MenuTranslation],
   compatibility: '>=2.0.0',
   providers: [
     ...services,

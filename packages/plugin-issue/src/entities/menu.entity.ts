@@ -1,6 +1,12 @@
-import type { ID } from '@vendure/core';
+import type {
+  ID,
+  LocaleString,
+  Translatable,
+  Translation,
+} from '@vendure/core';
 import { DeepPartial, VendureEntity } from '@vendure/core';
-import { Column, Entity, ManyToOne } from 'typeorm';
+import { Column, Entity, ManyToOne, OneToMany } from 'typeorm';
+import { MenuTranslation } from './menu-translation.entity.js';
 
 /**
  * @description This entity represents a front end campaign
@@ -8,10 +14,12 @@ import { Column, Entity, ManyToOne } from 'typeorm';
  * @docsCategory entities
  */
 @Entity('menu')
-export class Menu extends VendureEntity {
+export class Menu extends VendureEntity implements Translatable {
   constructor(input?: DeepPartial<Menu>) {
     super(input);
   }
+
+  name: LocaleString;
 
   @Column({ unique: true })
   code: string;
@@ -21,4 +29,9 @@ export class Menu extends VendureEntity {
 
   @Column('int', { nullable: true })
   parentId: ID | null;
+
+  @OneToMany(() => MenuTranslation, (translation) => translation.base, {
+    eager: true,
+  })
+  translations: Array<Translation<Menu>>;
 }
