@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/naming-convention */
-import { PluginIssue } from '@issue/plugin-issue';
+// import { PluginIssue } from '@issue/plugin-issue';
 import { AdminUiPlugin } from '@vendure/admin-ui-plugin';
 import { AssetServerPlugin } from '@vendure/asset-server-plugin';
 import type { VendureConfig } from '@vendure/core';
@@ -62,9 +62,9 @@ export const config: VendureConfig = {
       route: 'admin',
       adminUiConfig: {
         hideVendureBranding: true,
-        brand: 'KZFOO',
+        brand: 'Vendure',
       },
     }),
-    PluginIssue.init({ autoDataInit: true }),
+    // PluginIssue.init({ autoDataInit: true }),
   ],
 };
