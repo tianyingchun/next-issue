@@ -1,8 +1,8 @@
 import { type Metadata } from 'next';
 import { fetchClient } from '@/common/fetch';
 import { graphql } from '@/common/graphql';
+import { Child, collectionFragment } from '@/views/Child';
 import { Box } from '@mui/material';
-import { Child, collectionFragment } from './Child';
 
 export const metadata: Metadata = {
   title: 'Best Ecommerce Suite Solution | Hyperse',

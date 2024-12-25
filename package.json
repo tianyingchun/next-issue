@@ -16,7 +16,7 @@
   "scripts": {
     "build": "next build",
     "codegen": "graphql-codegen --config ./codegen.cjs",
-    "dev": "next dev --port 4001 --turbopack",
+    "dev": "next dev --port 5001 --turbopack",
     "postinstall": "patch-package",
     "lint": "TIMING=1 eslint \"**/*.{ts,tsx,js,jsx}\" --fix",
     "next-lint": "next lint",
