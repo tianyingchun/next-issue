@@ -1,11 +1,30 @@
-# hyperse-main
+## install
 
-https://ui.shadcn.com/docs/installation/next
-https://preline.co/examples/blog-sections.html
-https://lucide.dev/icons/credit-card
+1. yarn install
+2. yarn dev
+3. http://localhost:4001/
 
-## Next-auth social networks login providers
+## Notes
 
-https://oauth-nextjs-tau.vercel.app/login
-https://github.com/nextauthjs/next-auth/blob/main/packages/core/src/providers/github.ts
-https://github.com/RaazeshP96/oauth_nextjs/blob/main/src/lib/auth.ts
+1. remove `modularizeImports` setup for @mui
+2. change `node_modules/@0no-co/graphql.web` (https://github.com/vercel/next.js/issues/72232)
+
+````diff
+diff --git a/node_modules/@0no-co/graphql.web/package.json b/node_modules/@0no-co/graphql.web/package.json
+index bd060d6..99b7d28 100644
+--- a/node_modules/@0no-co/graphql.web/package.json
++++ b/node_modules/@0no-co/graphql.web/package.json
+@@ -16,8 +16,7 @@
+   "exports": {
+     ".": {
+       "types": "./dist/graphql.web.d.ts",
+-      "import": "./dist/graphql.web.mjs",
+-      "require": "./dist/graphql.web.js",
++      "default": "./dist/graphql.web.js",
+       "source": "./src/index.ts"
+     },
+     "./package.json": "./package.json"
+     ```
+````
+
+3. avoid use `fragment query` for `RSC`

@@ -1,0 +1,72 @@
+{
+  "IndexPage": {
+    "title": "next-intl example",
+    "description": "This is a basic example that demonstrates the usage of <code>next-intl</code> with the Next.js App Router. Try changing the locale in the top right corner and see how the content changes."
+  },
+  "QuotationForm": {
+    "drawerTitle": "Quotation Request",
+    "error": "{error, select, USER_ALREADY_EXISTS {User already exists} other {Unknown error}}"
+  },
+  "PathnamesPage": {
+    "title": "Pathnames",
+    "description": "<p>The pathnames are internationalized too.</p><p>If you're using the default language English, you'll see <code>/en/pathnames</code> in the browser address bar on this page.</p><p>If you change the locale to German, the URL is localized accordingly (<code>/de/pfadnamen</code>).</p>"
+  },
+  "Error": {
+    "title": "Something went wrong!",
+    "description": "<p>We've unfortunately encountered an error.</p><p>You can try to <retry>reload the page</retry> you were visiting.</p>"
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "Please double-check the browser address bar or use the navigation to go to a known page."
+  },
+  "LocaleLayout": {
+    "title": "next-intl example"
+  },
+  "LocaleSwitcher": {
+    "locale": "{locale, select, zh {简体中文} en {English} other {Unknown}}"
+  },
+  "Navigation": {
+    "home": "Home",
+    "pathnames": "Pathnames"
+  },
+  "LayoutPage": {
+    "links": {
+      "docs": {
+        "title": "Docs",
+        "description": "Learn more about at hyperse.net",
+        "href": "https://www.hyperse.net/"
+      },
+      "source": {
+        "title": "Source code",
+        "description": "Browse the source code on GitHub.",
+        "href": "https://github.com/hyperse-io/"
+      }
+    }
+  },
+  "SignUp": {
+    "error": "{error, select, USER_ALREADY_EXISTS {User already exists} other {Unknown error}}"
+  },
+  "Login": {
+    "title": "Sign in",
+    "email": "Email address",
+    "password": "One-Time Password",
+    "submit": "Sign in",
+    "send": "Send",
+    "sent": "Sent",
+    "error": "{error, select, InvalidCredentialsError {The provided credentials are invalid} other {Invalid email or password}}"
+  },
+  "Passport": {
+    "title": "Title",
+    "firstName": "First Name",
+    "lastName": "Last Name",
+    "email": "Email Address",
+    "phoneNumber": "Phone Number",
+    "birthday": "Birthday"
+  },
+  "GlobalConfig": {
+    "us": "United States",
+    "gb": "United Kingdom",
+    "de": "Germany",
+    "region": "Region"
+  }
+}

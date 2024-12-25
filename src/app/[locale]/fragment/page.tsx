@@ -1,7 +1,8 @@
 import { type Metadata } from 'next';
 import { fetchClient } from '@/common/fetch';
 import { graphql } from '@/common/graphql';
-import { Box, Typography } from '@mui/material';
+import { Box } from '@mui/material';
+import { Child, collectionFragment } from './Child';
 
 export const metadata: Metadata = {
   title: 'Best Ecommerce Suite Solution | Hyperse',
@@ -9,16 +10,18 @@ export const metadata: Metadata = {
     'Hyperse, One of the best ecommerce suite partners, dedicated to support and prospering the ecommerce industry globally. So Hurry up and grab your opportunities.',
 };
 
-const Collection = graphql(`
-  query Collection($options: CollectionListOptions!) {
-    collections(options: $options) {
-      items {
-        id
-        name
+const Collection = graphql(
+  `
+    query Collection($options: CollectionListOptions!) {
+      collections(options: $options) {
+        items {
+          ...ChildCollection
+        }
       }
     }
-  }
-`);
+  `,
+  [collectionFragment]
+);
 
 export default async function Home() {
   const { data } = await fetchClient.query({
@@ -36,7 +39,7 @@ export default async function Home() {
       hello hyperse
       <Box>
         {data.collections.items.map((s) => {
-          return <Typography key={s.id}>{s.name}</Typography>;
+          return <Child key={s.id} item={s}></Child>;
         })}
       </Box>
     </Box>

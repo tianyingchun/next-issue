@@ -25,6 +25,16 @@
     "plugins": [
       {
         "name": "next"
+      },
+      {
+        "name": "@0no-co/graphqlsp",
+        "schemas": [
+          {
+            "name": "shop-api",
+            "schema": "https://demo.vendure.io/shop-api",
+            "tadaOutputLocation": "./src/common/graphql-env.d.ts"
+          }
+        ]
       }
     ]
   },
